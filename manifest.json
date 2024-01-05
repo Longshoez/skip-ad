@@ -1,0 +1,13 @@
+{
+  "name": "Skip-Ad",
+  "version": "1.0.0",
+  "description": "A button that mutes and speeds up youtube ads",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default-title": "Skipper"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}

@@ -1,0 +1,65 @@
+html{
+  background-color: #0f0f0f;
+}
+
+.adButtonPosition{
+  position: fixed;
+	z-index: 9999;
+  top: 10px;
+	right: 180px;
+}
+
+/* Add a hideable class in here so it wont bother in fullscreen
+    until you hover over it and it slides down.
+*/
+
+.adButtonSkip{
+	background-color: transparent;
+	color: white;
+	padding: 14px 20px;
+  border: none;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+.adButtonSkip>i{
+  transform: scale(1.5);
+}
+
+.adButtonSkip:hover{
+  background-color: #272727;
+}
+
+.show:hover + .hide{
+  display: block;
+}
+
+.adButtonSkip:active{
+	opacity: 1;
+	color: lightSlateGray;
+}
+
+.hide{
+  display: none;
+}
+
+.adButtonTooltip{
+  border: none;
+	border-radius: 100px;
+	cursor: pointer;
+  top: 60px;
+/*   right: 185px; */
+    right: 172px;
+
+  padding: 4px 5px;
+  margin-top: 45px;
+  font-size: 13px;
+  color: white;
+  background-color: #616161;
+
+  margin: 8px;
+  border-radius: 4px;
+  font-weight: 400;
+  line-height: 1.8rem;
+  font-family: "Roboto", "Arial", sans-serif;
+}
