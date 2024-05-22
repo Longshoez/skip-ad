@@ -32,10 +32,6 @@ youtube started warnign users about banning their accounts for using adblockers 
 ------------
 1. Type this into the url box, ```chrome://exntensions``` this extension only works for chromium based browsers, even if you dont use chrome, the url will work. 
 
-2. Enable developer mode toggle on the top right corner
-
-3. Locate the three new buttons showing up on the far left top corner and click ``Load unpacked``
-
-4. Navigate to the folder and select it.
+2. Drag the ```skip-ad.crx``` file into the window 
 
 5. Now on youtube, as soon as you encounter an Ad you can click the ```~``` key left to the ```1``` key, on your keyboard or the ```\``` key above the ```return``` key, alternative for spanish keyboards, use the ```¿``` key. 
