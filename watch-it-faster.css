@@ -1,0 +1,29 @@
+/*
+.ytd-player{
+  filter: brightness(0);
+}
+*/
+
+.adButtonSkip{
+	position: fixed;
+	top: 10px;
+	right: 180px;  
+	z-index: 9999;
+	background-color: #3d3d3d;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.adButtonSkip:hover{
+	opacity: 0.5;
+}
+
+.adButtonSkip:active{
+	opacity: 1;
+	color: lightSlateGray;
+}
+
+
