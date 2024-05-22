@@ -1,3 +1,7 @@
+// Add the styling for the button, which somehow is not showing up ;C
+const Custom_Styles = css => document.head.appendChild(document.createElement('style')).innerHtml = css
+Custom_Styles(`@import url('./watch-it-faster.css');`)
+
 const myButton = document.createElement("button");
 myButton.textContent = "Skip ad"; 
 
