@@ -22,17 +22,20 @@ youtube started warnign users about banning their accounts for using adblockers 
 - [x] Manually skip youtube ad.
   - [x] Mute ad
   - [x] Fast forward ad
-  - [x] Automatically skip ad
+  - [ ] Automatically skip ad
   - [ ] Dim ad
  - [ ] Automatically execute on ad show up.
-- [ ] Turn code into chrome extension.
+- [x] Turn code into chrome extension.
 - [ ] publish extension to chrome store.
 
 ## How you can test it? 🥸
 ------------
-1. For the sake of quick prototyping and development i used an existing extension that lets you inject code into any website
-you can find it here in the chrome web store: [User javascript and css](https://chromewebstore.google.com/detail/user-javascript-and-css/nbhcbdghjpllgmfilhnhkllmkecfmpld)
+1. Type this into the url box, ```chrome://exntensions``` this extension only works for chromium based browsers, even if you dont use chrome, the url will work. 
 
-2. Inside the extension page you can paste this JS code [skip-ad.js](https://gist.github.com/Longshoez/bbdfe7f287bfdf715aab900bfbb2329f) and this basic styling on the CSS section [skip-ad.css](https://gist.github.com/Longshoez/881023ed1393df2b4821ed6adc5440af)
+2. Enable developer mode toggle on the top right corner
 
-3. Now everytime you enter YouTube you should see a "Skip ad" button on the top right corner of the screen. 
+3. Locate the three new buttons showing up on the far left top corner and click ``Load unpacked``
+
+4. Navigate to the folder and select it.
+
+5. Now on youtube, as soon as you encounter an Ad you can click the ```~``` key left to the ```1``` key, on your keyboard or the ```\``` key above the ```return``` key, alternative for spanish keyboards, use the ```¿``` key. 
