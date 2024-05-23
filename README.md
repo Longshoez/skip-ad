@@ -30,7 +30,7 @@ youtube started warnign users about banning their accounts for using adblockers 
 
 ## How you can test it? 🥸
 ------------
-1. Type this into the url box, ```chrome://exntensions``` this extension only works for chromium based browsers, even if you dont use chrome, the url will work. 
+1. Type this into the url box, ```chrome://extensions``` this extension only works for chromium based browsers, even if you dont use chrome, the url will work. 
 
 2. Drag the ``skip-ad.crx``` file into the window 
 
