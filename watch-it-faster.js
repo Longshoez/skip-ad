@@ -49,7 +49,12 @@ myButton.setAttribute("onclick", "skipAd()")
 //const videoPlayer = document.querySelector(".ytd-player")
 
 document.addEventListener("keypress", function(event) {
-  if (event.keyCode == 96 || event.keyCode == 92 || event.keyCode == 124) 
+  if (
+      event.keyCode == 96 || 
+      event.keyCode == 92 || 
+      event.keyCode == 191 ||
+      event.keyCode == 45
+  ) 
     skipAd()
   }
   
