@@ -52,11 +52,17 @@ document.addEventListener("keypress", function(event) {
   if (
       event.keyCode == 96 || 
       event.keyCode == 92 || 
-      event.keyCode == 191 ||
-      event.keyCode == 45
-  ) 
+      event.keyCode == 221 ||
+      event.keyCode == 45  
+  ) {
     skipAd()
   }
-  
-  //190 220
 });
+
+// document.addEventListener("keypress", function(event) {
+//   if (event.keyCode == 96){
+//     skipAd()
+//   }
+//   //96, 92, 191, 45
+//   //190 220
+// });
