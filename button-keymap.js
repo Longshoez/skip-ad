@@ -30,6 +30,10 @@ const stopSkip = (vp) => {
 const skipAd = () => {
   let vp = document.querySelector('.video-stream')
   vp.muted = true
+  setTimeout(() => {
+    vp.muted = false
+    stopSkip(vp)
+  }, 5000);
 }
 
 myButton.setAttribute("onclick", "skipAd()")

@@ -19,7 +19,6 @@ const stopSkip = (vp) => {
   // let skipBtn = document.querySelector('.ytp-ad-skip-button-modern')
   let skipBtn = document.querySelector('.ytp-skip-ad-button')
   vp.muted = false
-  vp.playbackRate = 1
   if (skipBtn) {
     skipBtn.click()
   } else {
@@ -29,19 +28,11 @@ const stopSkip = (vp) => {
 
 const skipAd = () => {
   let vp = document.querySelector('.video-stream')
-  // let skipBtn = document.querySelector('.ytp-ad-skip-button-modern')
-  // let skipBtn2 = document.getElementsByClassName('ytp-ad-skip-button-modern')[0]
   vp.muted = true
-  // vp.playbackRate = 16 
-  //it seems stopping the playback is the fastest way to skip the ad. 
-  //yes it was, but sometimes youtube ads (the test subject). doesnt let you skip it, sometimes
-  //it forces you to play the whole thing. thats why the speed up method came back
-  vp.playbackRate = 16
   setTimeout(() => {
     vp.muted = false
-    vp.playbackRate = 1
     stopSkip(vp)
-  }, 350);
+  }, 5000);
 }
 
 myButton.setAttribute("onclick", "skipAd()")
