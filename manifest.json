@@ -15,7 +15,7 @@
         "https://*.youtube.com/*"
       ],
       "js": [
-        "watch-it-faster.js"
+        "button-keymap.js"
       ]
     }
   ],
