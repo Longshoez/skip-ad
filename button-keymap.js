@@ -15,25 +15,28 @@ document.body.appendChild(myButton);
 let adBanner = document.querySelector('.ytp-ad-player-overlay-flyout-cta')
 //ytp-ad-skip-button-modern ytp-button
 
-const stopSkip = (vp) => {
+const stopSkip = () => {
   // let skipBtn = document.querySelector('.ytp-ad-skip-button-modern')
-  let skipBtn = document.querySelector('.ytp-skip-ad-button')
-  vp.muted = false
-  // vp.playbackRate = 1
-  if (skipBtn) {
-    skipBtn.click()
-  } else {
-    console.log("couldnt find skip button")
-  }
+  // let skipBtn = document.querySelector('.ytp-skip-ad-button')
+  // vp.muted = false
+  // // vp.playbackRate = 1
+  // if (skipBtn) {
+  //   skipBtn.click()
+  // } else {
+  //   console.log("couldnt find skip button")
+  // }
+
+  return new Promise(resolve => {
+    resolve(document.querySelector('.ytp-ad-skip-button-modern'))
+  })
 }
 
-const skipAd = () => {
+const skipAd = async () => {
   let vp = document.querySelector('.video-stream')
   vp.muted = true
-  setTimeout(() => {
-    vp.muted = false
-    stopSkip(vp)
-  }, 5000);
+
+  const skip = await stopSkip()
+  skip.click()
 }
 
 myButton.setAttribute("onclick", "skipAd()")
